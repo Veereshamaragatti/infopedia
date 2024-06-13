@@ -1,0 +1,84 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 33%;
+    margin-top: 3%;
+}
+
+.slide-container {
+    position: relative;
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+    display: none;
+
+}
+
+.slideshow-container {
+    width: 1000%;
+    max-height: 670px;
+    overflow: hidden;
+}
+
+img {
+    width: 87%;
+    max-height: 713px;
+    margin-left: 0%;
+    margin-top: -3%;
+    position: fixed;
+}
+
+.content {
+    text-align: center;
+    padding: 0px 40px;
+    font-family: arial;
+    color: #404040;
+}
+
+.content p {
+    text-align: justify;
+    line-height: 1.6em;
+    color: grey;
+}
+
+.dot-container {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 42px;
+    z-index: 1;
+}
+
+.dot {
+    display: block;
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding: 0px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px 1px #199cd9;
+    background: #fff;
+    transition: all 0.4s ease;
+}
+
+.active {
+    background-color: rgb(83, 83, 228);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
